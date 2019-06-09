@@ -43,7 +43,7 @@ function loadCode(object, onFinish)
     }
 }
 
-var limit = 1000;
+var limit = 1;
 
 // has 1 limit, so we can do it one at a time!
 var _url = "https://www.khanacademy.org/api/internal/scratchpads/top?casing=camel&sort=3&limit=1&subject=pjs&topic_id=xffde7c31";
@@ -139,7 +139,7 @@ function open()
 
 var id = window.setInterval(function()
 {
-    if(c >= 4)
+    if(c >= 5)
     {
         open(_url);
         window.clearInterval(id);
